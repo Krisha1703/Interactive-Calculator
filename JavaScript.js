@@ -244,7 +244,7 @@ Point.addEventListener('click', function(){
 //Dark Mode
 function Dark(){
     //Audio for the Dark mode
-    var audioDark = new Audio('DarkMode.mp4');
+    var audioDark = new Audio('Audio Recordings/DarkMode.mp4');
     audioDark.play();
 
     //Body of the calculator
@@ -293,7 +293,7 @@ function Dark(){
 //Light Mode
 function Light(){
     //Audio for the Dark mode
-    var audioLight = new Audio('LightMode.mp4');
+    var audioLight = new Audio('Audio Recordings/LightMode.mp4');
     audioLight.play();
 
     //Body of the calculator
@@ -342,7 +342,7 @@ function Light(){
 //Neutral Mode
 function Neutral(){
     //Audio for the Dark mode
-    var audioNeutral = new Audio('NeutralMode.mp4');
+    var audioNeutral = new Audio('Audio Recordings/NeutralMode.mp4');
     audioNeutral.play();
 
     //Body of the calculator
@@ -496,7 +496,7 @@ function Calculate(){
     catch (error) {
         Display.textContent = "ERROR!";
         if (Display.textContent = "ERROR!"){ //Plays the audio files for "Error" when error is displayed
-            var audioError = new Audio('audioError.mp4');
+            var audioError = new Audio('Audio Recordings/audioError.mp4');
             audioError.play();
         }
     }
@@ -521,18 +521,18 @@ function AudioResult(){
         let audioFile = ''; //Initially the audioFile is set to null
 
         switch(character){
-            case '0': audioFile = 'Zero'; break; //Audio file for number 0 is output when final answer contains 0
-            case '1': audioFile = 'One'; break; //Audio file for number 1 is output when final answer contains 1
-            case '2': audioFile = 'Two'; break;
-            case '3': audioFile = 'Three'; break;
-            case '4': audioFile = 'Four'; break;
-            case '5': audioFile = 'Five'; break;
-            case '6': audioFile = 'Six'; break;
-            case '7': audioFile = 'Seven'; break;
-            case '8': audioFile = 'Eight'; break;
-            case '9': audioFile = 'Nine'; break;
-            case '.': audioFile = 'Point'; break; //Audio file for . is output when final answer contains point
-            case '-': audioFile = 'audioNegative'; break; //Audio file for negative answer is output when final answer contains - (negative sign)
+            case '0': audioFile = 'Audio Recordings/Zero'; break; //Audio file for number 0 is output when final answer contains 0
+            case '1': audioFile = 'Audio Recordings/One'; break; //Audio file for number 1 is output when final answer contains 1
+            case '2': audioFile = 'Audio Recordings/Two'; break;
+            case '3': audioFile = 'Audio Recordings/Three'; break;
+            case '4': audioFile = 'Audio Recordings/Four'; break;
+            case '5': audioFile = 'Audio Recordings/Five'; break;
+            case '6': audioFile = 'Audio Recordings/Six'; break;
+            case '7': audioFile = 'Audio Recordings/Seven'; break;
+            case '8': audioFile = 'Audio Recordings/Eight'; break;
+            case '9': audioFile = 'Audio Recordings/Nine'; break;
+            case '.': audioFile = 'Audio Recordings/Point'; break; //Audio file for . is output when final answer contains point
+            case '-': audioFile = 'Audio Recordings/audioNegative'; break; //Audio file for negative answer is output when final answer contains - (negative sign)
         }
 
         if (audioFile !== ''){ //append each audioFile into audioFiles array until the audioFile is not empty
