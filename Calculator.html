@@ -1,0 +1,139 @@
+<!--Basic Interactive Calculator-->
+<!--Made By: Krisha Botadara-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Calculator</title>
+    <link rel="stylesheet" type="text/css" href="Style.css"> <!--Linking CSS stylesheet-->
+</head>
+<body>
+    <!--Heading of the webpage-->
+    <div id="heading">
+        My Calculator...
+    </div>
+
+    <!---Three different types of modes: dark, neutral, and light-->
+    <!---Clicking on the button lets the user change to their desired mode-->
+    <div class="mode">
+        <button onclick="Dark()" id="dark">Dark</button>
+        <button onclick="Neutral()" id="neutral">Neutral</button>
+        <button onclick="Light()" id="light">Light</button>
+    </div>
+
+    <!--The calculator is divided into 2 major elements including display and buttons-->
+    <!--The buttons include numbers and operators-->
+    <div id="calculator">
+        <br><br>
+        <!--class main includes display and = sign-->
+        <!--class number includes number buttons and decimal point-->
+        <!--class operator includes arithmetric operators like +, *, etc-->
+        <!--class function includes delete, clear, and answer-->
+
+        <!--This will be the initial text in the display of the calculator-->
+        <div id="display" class="main">#MADE BY: KRISHA</div>
+
+         <!--First Row of the Calculator-->
+        <div class="buttons">
+            <!--Created button 7 with its audio file-->
+            <div id="n7" class="number">7
+                <audio id="audioSeven" src="seven.mp4"></audio>
+            </div>
+            <!--Created button 8 with its audio file-->
+            <div id="n8" class="number">8
+                <audio id="audioEight" src="eight.mp4"></audio>
+            </div>
+            <!--Created button 9 with its audio file-->
+            <div id="n9" class="number">9
+                <audio id="audioNine" src="nine.mp4"></audio>
+            </div>
+            <!--Created button DEL (Delete) with its audio file-->
+            <div id="del" class="function">DEL
+                <audio id="audioDelete" src="delete.mp4"></audio>
+            </div>
+            <!--Created button CLR (Clear) with its audio file-->
+            <div id="clr" class="function">CLR
+                <audio id="audioClear" src="clear.mp4"></audio>
+            </div>
+        </div>
+
+        <!--Second Row of the Calculator-->
+        <div class="buttons">
+            <!--Created button 4 with its audio file-->
+            <div id="n4" class="number">4
+                <audio id="audioFour" src="four.mp4"></audio>
+            </div>
+            <!--Created button 5 with its audio file-->
+            <div id="n5" class="number">5
+                <audio id="audioFive" src="five.mp4"></audio>
+            </div>
+            <!--Created button 6 with its audio file-->
+            <div id="n6" class="number">6
+                <audio id="audioSix" src="six.mp4"></audio>
+            </div>
+            <!--Created button Multiplication with its audio file-->
+            <div id="mul" class="operator">x
+                <audio id="audioTimes" src="times.mp4"></audio>
+            </div>
+            <!--Created button Division with its audio file-->
+            <div id="div" class="operator">÷
+                <audio id="audioDivide" src="divided by.mp4"></audio>
+            </div>
+        </div>
+        
+        <!--Third Row of the Calculator-->
+        <div class="buttons">
+            <!--Created button 1 with its audio file-->
+            <div id="n1" class="number">1
+                <audio id="audioOne" src="one.mp4"></audio>
+            </div>
+            <!--Created button 2 with its audio file-->
+            <div id="n2" class="number">2
+                <audio id="audioTwo" src="two.mp4"></audio>
+            </div>
+            <!--Created button 3 with its audio file-->
+            <div id="n3" class="number">3
+                <audio id="audioThree" src="three.mp4"></audio>
+            </div>
+            <!--Created button Addition with its audio file-->
+            <div id="add" class="operator">+
+                <audio id="audioPlus" src="plus.mp4"></audio>
+            </div>
+            <!--Created button Subtraction with its audio file-->
+            <div id="sub" class="operator">-
+                <audio id="audioMinus" src="minus.mp4"></audio>
+            </div>
+        </div>
+        
+        <!--Fourth Row of the Calculator-->
+        <div class="buttons">
+            <!--Created button 0 with its audio file-->
+            <div id="n0" class="number">0
+                <audio id="audioZero" src="zero.mp4"></audio>
+            </div>
+            <!--Created button decimal point with its audio file-->
+            <div id="point" class="number">.
+                <audio id="audioPoint" src="point.mp4"></audio>
+            </div>
+            <!--Created button Answer with its audio file-->
+            <div id="ans" class="function">ANS
+                <audio id="audioAnswer" src="answer.mp4"></audio>
+            </div>
+            <!--Created button Percentage with its audio file-->
+            <div id="percent" class="operator">%
+                <audio id="audioPercentage" src="percentage.mp4"></audio>
+            </div>
+            <!--Created button Equals to with its audio file-->
+            <div id="equal" class="main">=
+                <audio id="audioEquals" src="equals to.mp4"></audio>
+            </div>
+        </div>
+            
+    </div>
+
+    <script src="JavaScript.js"></script> <!--Linking JavaScript-->
+
+</body>
+</html>

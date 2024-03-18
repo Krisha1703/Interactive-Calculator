@@ -1,0 +1,103 @@
+/* Basic Interactive Calculator
+   Made By: Krisha Botadara*/
+
+/*Adding style to the background*/
+body{
+    background-color: cadetblue; /*Changes background color of the webpage from white to cadetblue*/
+}
+/*Applyling style to the calculator body*/
+#calculator{
+    background-color: rgb(71,70,70); /*Background color of the calculator*/
+    width: 40vw;                       /*Height of the calculator*/
+    height: 65vh;                      /*Width of the calculator*/
+    margin: 2vw 30vw 5vw 30vw;         /*Margin width for the calculator: top, right, bottom, left*/
+    color: rgb(71,70,70);           /*Font color*/
+}
+/*Apply common style to the heading of the webpage, mode button, and the calcualtor body itself*/
+#calculator,#heading,button{
+    text-align: center; /*Aligns text to the center*/
+    font-weight: bolder; /*Weight of the font (boldness)*/
+    font-family: 'Courier New', Courier, monospace; /*Font style*/
+}
+/*Apply style to the class main*/
+.main{
+    background-color: rgb(8,159,108);
+}
+/*Apply style to the class nummber*/
+.number{
+    background-color: white;
+}
+/*Apply style to the class operator*/
+.operator{
+    background-color: rgb(216,195,8);
+}
+/*Apply style to the class function*/
+.function{
+    background-color: orange;
+}
+/*Add style to the display of the calculator*/
+#display{
+    border-radius: 0.4em; /*Refers to roundness of an element's corner*/
+    width: 34vw;
+    height: 8vh;
+    margin: 0vw 3vw; /* top/bottom , left/right */
+    font-size: 1.8em;
+    padding-top: 1.5vw; /*creates space around the display*/
+}
+/* Add style to row of calculator */
+.buttons{
+    /*First row will consists of 5 buttons: 7, 8, 9, DEL, CLR */
+    display: flex; /*aligning items in-line*/
+    margin-left: 3vw;
+}
+/*Add comon styles to class attributes*/
+.number,.operator,.main,.function{
+    width: 5vw;
+    height: 5vh;
+    border-radius: 0.3em;
+    margin: 2vw 3vw 0vw 0vw;
+}
+/*Add common styles to class attributes and button element*/
+.number,.operator,.main,.function,button{
+    font-size: 1.5em;
+    padding-top: 0.5vw;
+    cursor: pointer;  /*Sets the cursor to pointer when clicks or hovers over the element*/
+}
+/*Add style to the divison and percentage symbol to enhance its appearance*/
+#div,#percent{
+    font-family: Arial, Helvetica, sans-serif;
+}
+/*Add style to the mode buttons*/
+button{
+    width: 10vw;
+    height: 10vh;
+    border-radius: 0.8em;
+    border-width: 0.4em;
+    margin: 2vw 4.8vw 0vw 30vw;
+}
+/*Add style to mode buttons specifically*/
+/*Dark mode*/
+#dark{
+    background-color: rgb(38,38,229);
+    color: black;
+    border-color: black;
+}
+/*Light mode*/
+#light{
+    background-color: rgb(128,189,233);
+}
+/*Neutral mode*/
+#neutral{
+    background-color: rgb(71,70,70);
+}
+/*Common styles for the neutral and light mode*/
+#neutral,#light{
+    color: white;
+    border-color: white;
+    margin-left: 0vw; /*Remove unwanted or extra spaces between buttons*/
+}
+/*Apply CSS style to the heading*/
+#heading{
+    font-size: 2.5em;
+    color: white;
+}
