@@ -1,3 +1,4 @@
+# Interactive-Calculator
 Welcome to the Interactive Calculator project! This project aims to create an interactive and user-friendly calculator application using HTML, CSS, and JavaScript.
 
 **Core Features**
