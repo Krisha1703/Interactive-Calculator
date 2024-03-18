@@ -1,7 +1,9 @@
 Welcome to the Interactive Calculator project! This project aims to create an interactive and user-friendly calculator application using HTML, CSS, and JavaScript.
+
 **Core Features**
 - Arithmetic Operations
   This feature allows operations like addition, subtraction, multiplication, percentage, and division.
+  
 **Advanced Features**
 - Interactive Buttons
   Each button provides audio feedback on click, enhancing the interactive experience.
